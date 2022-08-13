@@ -2,9 +2,11 @@
 
 import DataPuller from './interfaces/DataPuller.js';
 import DefaultUI from './themes/Default/Default.js';
+import Moonlit from './themes/Moonlit/Moonlit.js';
 
 export const Themes = {
     Default: DefaultUI,
+    Moonlit: Moonlit,
 };
 
 

@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;900&display=swap');
+
+
+:root {
+    --primary: #4bffd8;
+    --secondary: #6009d3;
+    --dark: #141414;
+
+    --size: 200px;
+    --sub-size: 40px;
+    --inv-size: calc(var(--size) - var(--sub-size));
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    line-height: var(--sub-size);
+}
+
+span {
+    display: block;
+}
+
+#root {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    height: auto;
+    background-color: #0e0e10;
+    display: flex;
+    flex-direction: column;
+}
+
+#upper-layer {
+    display: flex;
+    height: calc(var(--size) - var(--sub-size));
+}
+
+#lower-layer {
+    display: flex;
+    height: var(--sub-size);
+    background-color: #242424;
+}
+
+#lower-layer > span {
+    flex: 1;
+    text-align: center;
+}
+
+#cover-wrapper {
+    min-width: var(--inv-size);
+    min-height: var(--inv-size);
+}
+
+#cover-img {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    height: calc(var(--inv-size) - 60px);
+}
+
+#song-info {
+    margin: 21px 0;
+    text-align: left;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+#song-info > span {
+    max-width: 300px;
+    height: 40px;
+    overflow: hidden;
+}
+
+[data="SongName"] {
+    font-size: 24px;
+    font-weight: 900;
+    width: fit-content;
+    transform: translateX(-0%);
+    white-space: nowrap;
+}
+
+[data="SongAuthor"] {
+    font-size: 20px;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+[data="Mapper"] {
+    font-weight: 200;
+    color: #858585;
+    white-space: nowrap;
+}
+
+svg {
+    width: 16px;
+    height: 16px;
+    fill: white;
+    display: inline;
+    transform: translateY(1px);
+}
