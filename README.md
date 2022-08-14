@@ -3,7 +3,7 @@
 &nbsp;
 
 ## How To
-If you are a streamer just use the following url as a source in obs or other streaming programs: https://bs-overlay.vercel.app/. Or If you want to use another Theme just include it in the url like this: https://bs-overlay.vercel.app/?theme=Moonlit.
+Make sure you have the mod DataPuller installed. If you are a streamer just use the following url as a source in obs or other streaming programs: https://bs-overlay.vercel.app/. Or If you want to use another Theme just include it in the url like this: https://bs-overlay.vercel.app/?theme=Moonlit.
 
 &nbsp;
 
