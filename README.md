@@ -1,13 +1,15 @@
 # Simple & themeable Beatsaber Overlay
 
-## What is different?
-* Specially made for easy development of new themes by other devs. No node stuff, no overengineering.
-* You are welcome to contribute your own themes, feel free to open a pull request.
-
 &nbsp;
 
 ## How To
 If you are a streamer just use the following url as a source in obs or other streaming programs: https://bs-overlay.vercel.app/. Or If you want to use another Theme just include it in the url like this: https://bs-overlay.vercel.app/?theme=Moonlit.
+
+&nbsp;
+
+## What is different?
+* Specially made for easy development of new themes by other devs. No node stuff, no overengineering.
+* You are welcome to contribute your own themes, feel free to open a pull request.
 
 &nbsp;
 
