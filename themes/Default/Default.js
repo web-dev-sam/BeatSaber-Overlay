@@ -1,10 +1,10 @@
-
+import { autoConvert } from "../../helpers/General.js";
 
 export default class DefaultUI {
 
 
     convertAccuracy(accuracy) {
-        return (Math.round(accuracy * 100) / 100) + "%";
+        return autoConvert("2AfterComma", accuracy) + "%";
     }
 
 
@@ -24,30 +24,17 @@ export default class DefaultUI {
 
 
     convertDifficulty(difficulty) {
-        return difficulty.replace("Plus", "+");
+        return autoConvert("diff", difficulty);
     }
 
 
-    convertTimeElapsed(timeElapsed, el, allData) {
-        const hours = Math.floor(timeElapsed / 3600);
-        const minutes = Math.floor(timeElapsed / 60);
-        const seconds = timeElapsed % 60;
-
-        let time = "";
-        if (hours > 0) time += hours + ":";
-        if (minutes < 10) 
-            time += (hours > 0 ? "0" : "") + minutes + ":";
-        else time += minutes + ":";
-        if (seconds < 10) 
-            time += "0" + seconds;
-        else time += seconds; 
-
-        return time;
+    convertTimeElapsed(timeElapsed) {
+        return autoConvert("time", timeElapsed);
     }
 
 
     convertStar(star) {
-        return Math.round(star * 10) / 10;
+        return autoConvert("1AfterComma", star);
     }
 
 

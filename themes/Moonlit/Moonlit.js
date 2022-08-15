@@ -1,13 +1,13 @@
-
+import { autoConvert } from "../../helpers/General.js";
 
 export default class Moonlit {
 
     convertStar(star) {
-        return (Math.round(star * 100) / 100);
+        return autoConvert("2AfterComma", star);
     }
 
     convertDifficulty(difficulty) {
-        return difficulty.replace("Plus", "+");
+        return autoConvert("diff", difficulty);
     }
 
     convertMapper(mapper) {
