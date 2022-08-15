@@ -1,8 +1,6 @@
 
 
-import UIInterface from '../../interfaces/UIInterface.js'; 
-
-export default class DefaultUI extends UIInterface {
+export default class DefaultUI {
 
 
     convertAccuracy(accuracy) {
@@ -22,6 +20,11 @@ export default class DefaultUI extends UIInterface {
         if (mapper)
             return `[${mapper}]`;
         return "";
+    }
+
+
+    convertDifficulty(difficulty) {
+        return difficulty.replace("Plus", "+");
     }
 
 

@@ -1,8 +1,6 @@
 
 
-import UIInterface from '../../interfaces/UIInterface.js'; 
-
-export default class Moonlit extends UIInterface {
+export default class Moonlit {
 
     convertStar(star) {
         return (Math.round(star * 100) / 100);

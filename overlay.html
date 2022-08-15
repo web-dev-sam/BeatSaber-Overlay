@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="module" defer>
+        import { Themes } from './themes/themes.js';
+        import DataPuller from './helpers/DataPuller.js';
+        import { getParam } from './helpers/General.js';
+
+        let theme = getParam('theme');
+        let debug = getParam('debug');
+        let themeClass = Themes[theme];
+        if (themeClass == null) {
+            themeClass = Themes['Default'];
+            theme = 'Default';
+        }
+
+        fetch(`themes/${theme}/${theme}.html`)
+            .then(response => response.text())
+            .then(html => {
+                document.body.innerHTML = html;
+            })
+            .then(() => {
+                const css = document.createElement("link");
+                css.rel = "stylesheet";
+                css.href = `themes/${theme}/${theme}.css`;
+                document.head.appendChild(css);
+            })
+            .then(() => {
+                const js = document.createElement("script");
+                js.src = `themes/${theme}/${theme}.js`;
+                js.type = "module";
+                document.body.appendChild(js);
+            }).finally(() => {
+                new DataPuller(themeClass, debug);   
+            });
+    </script>
+</body>
+
+</html>

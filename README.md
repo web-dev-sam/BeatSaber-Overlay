@@ -3,7 +3,7 @@
 &nbsp;
 
 ## How To
-Make sure you have the mod DataPuller installed. If you are a streamer just use the following url as a source in obs or other streaming programs: https://bs-overlay.vercel.app/. Or If you want to use another Theme just include it in the url like this: https://bs-overlay.vercel.app/?theme=Moonlit.
+Make sure you have the mod DataPuller installed. If you are a streamer just use the following url as a source in obs or other streaming programs: https://bs-overlay.vercel.app/overlay.html. Or If you want to use another Theme just include it in the url like this: https://bs-overlay.vercel.app/overlay.html?theme=Moonlit.
 
 &nbsp;
 
@@ -18,7 +18,7 @@ Make sure you have the mod DataPuller installed. If you are a streamer just use 
 2. Make sure your folder and files have the same name.
 3. Register your theme in the `index.js` file by adding it to the `THEMES` constant.
 4. Start your VSCode Live Server (Its an extension for VSCode).
-5. Start beatsaber and playing a replay or something when developing your theme under https://bs-overlay.vercel.app/?theme=YourThemeName
+5. Start beatsaber and playing a replay or something when developing your theme under https://bs-overlay.vercel.app/overlay.html?theme=YourThemeName
 6. Have fun designing and creating your theme!
 
 &nbsp;
