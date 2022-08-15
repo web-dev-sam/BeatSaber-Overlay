@@ -140,6 +140,8 @@ export default class DataPuller {
 
             this.uiClass["update" + key]?.(this.data[key], this.data);
         }
+
+        document.getElementById("overlay-wrapper").style.opacity = 1;
     }
 
 

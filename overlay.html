@@ -9,6 +9,15 @@
 </head>
 
 <body>
+    <style>
+        #overlay-wrapper {
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+    </style>
+    <div id="overlay-wrapper">
+
+    </div>
     <script type="module" defer>
         import { Themes } from './themes/themes.js';
         import DataPuller from './helpers/DataPuller.js';
@@ -25,7 +34,7 @@
         fetch(`themes/${theme}/${theme}.html`)
             .then(response => response.text())
             .then(html => {
-                document.body.innerHTML = html;
+                document.getElementById("overlay-wrapper").innerHTML = html;
             })
             .then(() => {
                 const css = document.createElement("link");
