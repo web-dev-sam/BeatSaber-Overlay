@@ -30,15 +30,14 @@
         import DataPuller from './helpers/DataPuller.js';
         import { getParam } from './helpers/General.js';
 
-        let theme = getParam('theme');
+        let themeStr = getParam('theme');
         let debug = getParam('debug');
-        let themeClass = Themes[theme];
-        if (themeClass == null) {
-            themeClass = Themes['Default'];
-            theme = 'Default';
+        let theme = Themes.find(t => t.name === themeStr);
+        if (theme == null) {
+            theme = Themes.find(t => t.name === 'Default');
         }
 
-        fetch(`themes/${theme}/${theme}.html`)
+        fetch(`themes/${theme.name}/${theme.name}.html`)
             .then(response => response.text())
             .then(html => {
                 document.getElementById("overlay-wrapper").innerHTML = html;
@@ -46,16 +45,16 @@
             .then(() => {
                 const css = document.createElement("link");
                 css.rel = "stylesheet";
-                css.href = `themes/${theme}/${theme}.css`;
+                css.href = `themes/${theme.name}/${theme.name}.css`;
                 document.head.appendChild(css);
             })
             .then(() => {
                 const js = document.createElement("script");
-                js.src = `themes/${theme}/${theme}.js`;
+                js.src = `themes/${theme.name}/${theme.name}.js`;
                 js.type = "module";
                 document.body.appendChild(js);
             }).finally(() => {
-                new DataPuller(themeClass, debug);   
+                new DataPuller(theme.theme, debug);   
             });
     </script>
 </body>
