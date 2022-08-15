@@ -5,6 +5,8 @@
 ## How To
 Make sure you have the mod DataPuller installed. If you are a streamer just use the following url as a source in obs or other streaming programs: https://bs-overlay.vercel.app/overlay.html. Or If you want to use another Theme just include it in the url like this: https://bs-overlay.vercel.app/overlay.html?theme=Moonlit.
 
+Overview of all themes with pictures is coming soon. Currently there are two themes available: `Default` & `Moonlit`.
+
 &nbsp;
 
 ## What is different?
