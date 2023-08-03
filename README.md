@@ -20,7 +20,7 @@ Overview of all themes with pictures is coming soon. Currently there are two the
 2. Make sure your folder and files have the same name.
 3. Register your theme in the `index.js` file by adding it to the `THEMES` constant.
 4. Start your VSCode Live Server (Its an extension for VSCode).
-5. Start beatsaber and playing a replay or something when developing your theme under https://bs-overlay.vercel.app/overlay.html?theme=YourThemeName
+5. Start beatsaber and playing a replay or something when developing your theme under https://beat-saber-overlay-f9wzhc7zt-webedy.vercel.app/overlay.html?theme=YourThemeName
 6. Have fun designing and creating your theme!
 
 &nbsp;
