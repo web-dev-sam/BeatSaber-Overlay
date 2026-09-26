@@ -1,9 +1,7 @@
 {
   "title": "Simple & Themeable Beatsaber Overlay",
   "tagline": "A very simple & modern implementation of a beatsaber stream overlay. 🎮",
-  "why": [
-    "Specially made for easy development of new themes by other devs. No node stuff, no overengineering."
-  ],
+  "why": "A live overlay showing in-game statistics of the currently played song on stream.",
   "sections": [
     {
       "title": "How to use it",

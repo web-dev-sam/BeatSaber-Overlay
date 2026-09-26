@@ -10,7 +10,7 @@ _A very simple & modern implementation of a beatsaber stream overlay. 🎮_
 &nbsp;
 
 ## Why does this exist?
-1. Specially made for easy development of new themes by other devs. No node stuff, no overengineering.
+A live overlay showing in-game statistics of the currently played song on stream.
 
 ## How to use it
 
